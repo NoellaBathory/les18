@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}   
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    background-color: pink;
+}
+
+h1 {
+    font-family: 'Didact Gothic';
+    height: 150px;
+    padding-top: 55px;
+    background-image: url(image/beverwijk.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.col-2 {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.col-9 {
+    float: right;
+    width: 100%;
+    height: auto; 
+    background: linear-gradient( rgb(159, 215, 181) 0%, rgba(2,69,10,1) 100%);
+    padding: 20px 0;
+}
+
+
+img {
+    max-width: 40%;
+    height: auto;
+}
+
+footer {
+    clear: both;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(2, 40, 2);
+}
+
+@media only screen and (min-width: 760px) {
+    [class*="col-"] {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .col-1 {width: 8.33%}
+    .col-2 {width: 16.66%}
+    .col-3 {width: 25%}
+    .col-4 {width: 33.33%}
+    .col-5 {width: 41.66%}
+    .col-6 {width: 50%}
+    .col-7 {width: 58.33%}
+    .col-8 {width: 66.66%}
+    .col-9 {width: 75%}
+    .col-10 {width: 83.33%}
+    .col-11 {width: 91.66%}
+    .col-12 {width: 100%}   
+
+    header {
+        clear:both;
+    }
+
+    .col-2 {
+        float: left;
+        height: auto;
+        width: 16.66%;
+    }
+
+    .col-9 {
+        float: right;
+        height: auto;
+        width: 75%;
+    }
+
+    img {
+        clear: right;
+        float: right;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    footer {
+        clear:both;
+    }
+}
+
